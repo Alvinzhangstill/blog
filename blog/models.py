@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
+import markdown
+from django.utils.html import strip_tags
 
 # Create your models here.
 
@@ -61,6 +64,20 @@ class Post(models.Model):
 
     def save(self,*args,**kwargs):   # 重写save方法，每次修改，保存当次时间信息
         self.modified_time = timezone.now()
+
+        md = markdown.Markdown(extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+        ])
+
+        # 先将 Markdown 文本渲染成 HTML 文本
+        # strip_tags 去掉 HTML 文本的全部 HTML 标签
+        # 从文本摘取前 54 个字符赋给 excerpt   (很多网站都采用这样一种生成摘要的方式)
+        self.excerpt = strip_tags(md.convert(self.body))[:54]
         super().save(*args,**kwargs)
+
+    def get_absolute_url(self):
+        return reverse('blog:detail',kwargs={'pk':self.pk})    # 不懂这种用法
+
 
 
