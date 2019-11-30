@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c0149c2-6fe2-4081-9abf-9c397fed8e86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/HelloDjango-blog-tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HelloDjango-blog-tutorial.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0e72adb1-4709-4922-98bb-12ed68f2ca95.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0e72adb1-4709-4922-98bb-12ed68f2ca95.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_archives.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_recent_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_recent_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +157,8 @@
       <workItem from="1574079748125" duration="1299000" />
       <workItem from="1574085697075" duration="1959000" />
       <workItem from="1574558740262" duration="5248000" />
-      <workItem from="1575032239599" duration="4153000" />
+      <workItem from="1575032239599" duration="4927000" />
+      <workItem from="1575088887080" duration="646000" />
     </task>
     <servers />
   </component>

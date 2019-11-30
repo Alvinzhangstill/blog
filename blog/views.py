@@ -1,7 +1,7 @@
 import markdown,re
 from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse
-from .models import Post,Category
+from .models import Post,Category,Tag
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 
@@ -53,6 +53,8 @@ def category(request,pk):
     return render(request,'blog/index.html',context={'post_list':post_list})
 
 
-
-
+def tag(request,pk):
+    t = get_object_or_404(Tag,pk=pk)
+    post_list = Post.objects.filter(tags=t).order_by('-created_time')
+    return render(request,'blog/index.html',context={'post_list':post_list})
 
