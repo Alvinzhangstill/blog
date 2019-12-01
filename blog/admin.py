@@ -13,7 +13,6 @@ class PostAdmin(admin.ModelAdmin):
         super().save_model(request,obj,form,change)
 
 
-
 admin.site.register(Post,PostAdmin)
 admin.site.register(Category)
 admin.site.register(Tag)

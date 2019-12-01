@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # 'blog', # 注册blog应用
-    'blog.apps.BlogConfig'
+    'blog.apps.BlogConfig',
+    'comments.apps.CommentsConfig',  # 注册 comments 应用
 ]
 
 MIDDLEWARE = [
